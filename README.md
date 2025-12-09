@@ -1,2 +1,2 @@
-# JavaScrip
+# Javascrip
 JavaScript code repo
