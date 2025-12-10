@@ -1,46 +1,73 @@
-// Primitive
+// // Primitive
 
-// 7 Types : String, Number, Boolean, Null , undefinded , Symbol, BigInt
+// const { useSyncExternalStore } = require("react");
 
-const score = 100
-const scoreValue = 100.3
+// // 7 Types : String, Number, Boolean, Null , undefinded , Symbol, BigInt
 
-const isLoggedIn = false
-const outsideTemp = null
-let userEmail;
+// const score = 100
+// const scoreValue = 100.3
 
-const id = Symbol('123')
-const  anotherId = Symbol('123')
+// const isLoggedIn = false
+// const outsideTemp = null
+// let userEmail;
 
-console.log(id === anotherId);
+// const id = Symbol('123')
+// const  anotherId = Symbol('123')
 
-const bigNumber = 123431223445n;
+// console.log(id === anotherId);
 
-console.log(bigNumber);
+// const bigNumber = 123431223445n;
 
-const heros = ["shaktiman", "doremon", "ritesh"]
+// console.log(bigNumber);
 
- let myObj = {
-    name: "hitesh",
-    age: 22,
+// // Reference (Non Primitive)
+
+// // Array, Objects, Functions
+
+// const heros = ["shaktiman", "doremon", "ritesh"]
+
+//  let myObj = {
+//     name: "hitesh",
+//     age: 22,
+// }
+
+// const myFunction = function(){
+//     console.log("Hello world");
+// }
+
+// console.log(typeof bigNumber);
+
+// console.log(typeof outsideTemp );
+
+// console.log(typeof scoreValue);
+
+// console.log(typeof anotherId);
+// console.log(typeof myFunction);
+// console.log(typeof heros);
+// console.log(typeof userEmail);
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non Primitive)
+
+let  myYoutubename = "buddhavihar"
+
+let anothername =  myYoutubename
+
+anothername = "Preetesh Tour & Travels"
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
 }
 
-const myFunction = function(){
-    console.log("Hello world");
-}
+let userTwo =  userOne 
 
-console.log(typeof bigNumber);
+userTwo.email = "subhash@google.com"
 
-console.log(typeof outsideTemp );
-
-console.log(typeof scoreValue);
-
-console.log(typeof anotherId);
-console.log(typeof myFunction);
-console.log(typeof heros);
-console.log(typeof userEmail);
-
-
-// Reference (Non Primitive)
-
-// Array, Objects, Functions
+console.log(userOne.email);
+console.log(userTwo.email);
